@@ -11,6 +11,23 @@ jobs:
   build-and-test:
     runs-on: ubuntu-latest
     steps:
+      # Setup Python
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      # Install Python dependencies (inside service folder)
+      - name: Install Python Dependencies
+        run: |
+          cd bookstore
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+      # Start API Service
+      - name: Start API Service
+        run: |
+          cd bookstore
+          nohup uvicorn main:app --reload &
+          sleep 10   # wait for API to boot
       - name: Checkout Code
         uses: actions/checkout@v4
       - name: Setup Node.js
