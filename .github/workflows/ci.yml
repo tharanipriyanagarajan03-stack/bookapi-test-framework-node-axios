@@ -11,6 +11,8 @@ jobs:
   build-and-test:
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
       # Setup Python
       - name: Setup Python
         uses: actions/setup-python@v5
@@ -28,8 +30,6 @@ jobs:
           cd bookstore
           nohup uvicorn main:app --reload &
           sleep 10   # wait for API to boot
-      - name: Checkout Code
-        uses: actions/checkout@v4
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
