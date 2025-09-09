@@ -19,8 +19,6 @@ This is a comprehensive API automation testing framework built with **Jest** and
 - Install dependencies: npm install
 - Set the environment in .env (e.g.): qa/dev(defaults to qa)
 - npm run test in cmd or can directly run through a test(script>>test) in package.json
-- 
-
 
 ## Framework Architecture
 
@@ -266,14 +264,12 @@ The [`randomDataSeeder.js`](utils/randomDataSeeder.js) generates:
 - Workaround: manually craft invalid JSON strings in tests (bypassing schema/POJOs).
 
 ## Future Enhancements
-
 - [ ] Allure reporting integration
 - [ ] Parallel test execution
 - [ ] API mocking for isolated testing
 - [ ] Docker containerization
 
 ## Contributing
-
 1. Fork the repository
 2. Create a feature branch
 3. Add tests for new functionality
