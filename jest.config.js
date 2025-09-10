@@ -2,7 +2,7 @@ module.exports = {
     testEnvironment: "jest-environment-node",
     testResultsProcessor: "jest-junit",
     verbose: true,
-    testMatch: ["**/__tests__/**/*.test.js"],
+    testMatch: ["**/__tests__.test.js"],
     reporters: [
     "default",
     ["jest-html-reporters", {
