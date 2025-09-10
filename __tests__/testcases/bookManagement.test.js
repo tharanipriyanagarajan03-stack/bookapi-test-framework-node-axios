@@ -1,11 +1,11 @@
-const CrudService = require("../utils/crudServices");
-const { createRandomBook } = require("../utils/randomDataSeeder");
-const endpoints = require("../config/endPoints");
-const { stringFormat } = require("../utils/common");
+const CrudService = require("../../utils/crudServices");
+const { createRandomBook } = require("../../utils/randomDataSeeder");
+const endpoints = require("../../config/endPoints");
+const { stringFormat } = require("../../utils/common");
 const Ajv = require('ajv');
 const ajv = new Ajv();
-const { getUserId, getEmail, getPassword } = require("../config/envConfig");
-const bookSchema = require("../schemas/bookSchema");
+const { getUserId, getEmail, getPassword } = require("../../config/envConfig");
+const bookSchema = require("../../schemas/bookSchema");
 
 describe("Book Management API Test", () => {
 

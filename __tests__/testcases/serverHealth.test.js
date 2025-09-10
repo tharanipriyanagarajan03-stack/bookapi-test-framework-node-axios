@@ -1,8 +1,8 @@
-const CrudService = require("../utils/crudServices");
-const endpoints = require("../config/endPoints");
+const CrudService = require("../../utils/crudServices");
+const endpoints = require("../../config/endPoints");
 const Ajv = require('ajv');
 const ajv = new Ajv();
-const userSchema = require("../schemas/userSchema");
+const userSchema = require("../../schemas/userSchema");
 
 describe("Validating Server Health", () => {
 

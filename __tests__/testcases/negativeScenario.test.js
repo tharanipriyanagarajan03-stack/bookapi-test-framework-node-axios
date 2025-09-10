@@ -1,7 +1,7 @@
-const CrudService = require("../utils/crudServices");
-const endpoints = require("../config/endPoints");
-const {stringFormat} = require("../utils/common");
-const {getUserId, getEmail, getPassword} = require("../config/envConfig");
+const CrudService = require("../../utils/crudServices");
+const endpoints = require("../../config/endPoints");
+const {stringFormat} = require("../../utils/common");
+const {getUserId, getEmail, getPassword} = require("../../config/envConfig");
 
 describe("Validating Negative Scenarios", () => {
 

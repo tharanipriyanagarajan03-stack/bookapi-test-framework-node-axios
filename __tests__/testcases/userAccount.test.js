@@ -1,9 +1,9 @@
-const CrudService = require("../utils/crudServices");
-const { generateUser } = require("../utils/randomDataSeeder");
-const endpoints = require("../config/endPoints");
+const CrudService = require("../../utils/crudServices");
+const { generateUser } = require("../../utils/randomDataSeeder");
+const endpoints = require("../../config/endPoints");
 const Ajv = require('ajv');
 const ajv = new Ajv();
-const userSchema = require("../schemas/userSchema");
+const userSchema = require("../../schemas/userSchema");
 
 describe("Account Creation Test", () => {
 
