@@ -10,6 +10,12 @@ const bookSchema = require("../../schemas/bookSchema");
 describe("Book Management API Test", () => {
 
     beforeAll(async () => {
+        const signInResponse = await CrudService.create(endpoints.AUTH.SIGNUP, {
+            id: getUserId(),
+            email: getEmail(),
+            password: getPassword()
+        });
+
         const response = await CrudService.create(endpoints.AUTH.LOGIN, {
             id: getUserId(),
             email: getEmail(),

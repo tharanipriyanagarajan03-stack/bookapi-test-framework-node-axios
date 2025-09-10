@@ -17,7 +17,7 @@ describe("Account Creation Test", () => {
         const response = await CrudService.create(endpoints.AUTH.SIGNUP, {
             id: user.id,
             email: user.email,
-            password: user.password,
+            password: user.password
         });
 
         //Schema Validation
