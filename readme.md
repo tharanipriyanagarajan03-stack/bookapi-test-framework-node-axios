@@ -4,8 +4,39 @@
 
 This is a comprehensive API automation testing framework built with **Jest** and **Axios** for testing a FastAPI Bookstore application. The framework provides end-to-end API testing capabilities with robust validations, reporting, and multi-environment support.
 
+## Tech Stack
+# Core Languages & Runtime
+- Node.js → runtime environment for executing JavaScript
+- JavaScript (ES6+) → main programming language
+
+# Testing Framework
+- Jest → testing framework + runner (assertions, mocks, coverage)
+
+# HTTP Client
+- Axios → for sending API requests (GET, POST, PUT, DELETE)
+
+# Project Management
+- npm (Node Package Manager) → dependency management and scripts
+
+# Config & Environment
+- dotenv (likely) → for loading .env files into process.env
+- Custom config files (dev.env, stage.env, etc.) → to support multiple environments
+
+# Utilities
+- Custom API client wrapper around Axios (apiClient.js)
+- Logger utility for request/response logging
+
+# Reporting
+- Jest reporters → default, verbose, or coverage (HTML reports in /coverage)
+- Allure / JUnit (if integrated) → CI/CD compatible test reporting
+
+# CI/CD
+- GitHub Actions (with .yml workflows) → automated test execution on push/PR
+
+# Schema
+- AJV
+
 ## Key Features
-- RESTful API testing for Bookstore operations
 - JSON Schema validation using AJV
 - Multi-environment configuration (Dev/QA)
 - HTML and JUnit reporting
