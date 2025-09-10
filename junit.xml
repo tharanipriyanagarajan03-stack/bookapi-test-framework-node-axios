@@ -1,25 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuites name="jest tests" tests="10" failures="0" errors="0" time="5.028">
-  <testsuite name="Book Management API Test" errors="0" failures="0" skipped="0" timestamp="2025-09-08T16:20:45" time="4.051" tests="10">
-    <testcase classname="Book Management API Test 01 - Check Health Status" name="Book Management API Test 01 - Check Health Status" time="0.118">
+<testsuites name="jest tests" tests="12" failures="0" errors="0" time="8.314">
+  <testsuite name="Account Creation Test" errors="0" failures="0" skipped="0" timestamp="2025-09-10T10:04:29" time="3.203" tests="2">
+    <testcase classname="Account Creation Test 01 - Sign up a new user" name="Account Creation Test 01 - Sign up a new user" time="0.502">
     </testcase>
-    <testcase classname="Book Management API Test 02 - Sign up a new user" name="Book Management API Test 02 - Sign up a new user" time="0.39">
+    <testcase classname="Account Creation Test 02 - Login with Created User and receive Access Token" name="Account Creation Test 02 - Login with Created User and receive Access Token" time="0.318">
     </testcase>
-    <testcase classname="Book Management API Test 03 - Login with Created User and receive Access Token" name="Book Management API Test 03 - Login with Created User and receive Access Token" time="0.283">
+  </testsuite>
+  <testsuite name="Validating Negative Scenarios" errors="0" failures="0" skipped="0" timestamp="2025-09-10T10:04:33" time="1.44" tests="4">
+    <testcase classname="Validating Negative Scenarios 01 - Trying to delete already deleted book should return 404" name="Validating Negative Scenarios 01 - Trying to delete already deleted book should return 404" time="0.009">
     </testcase>
-    <testcase classname="Book Management API Test 04 - Create a new book Data" name="Book Management API Test 04 - Create a new book Data" time="0.095">
+    <testcase classname="Validating Negative Scenarios 02 - Invalid Json format should return 422" name="Validating Negative Scenarios 02 - Invalid Json format should return 422" time="0.008">
     </testcase>
-    <testcase classname="Book Management API Test 05 - Update Book Data Values" name="Book Management API Test 05 - Update Book Data Values" time="0.028">
+    <testcase classname="Validating Negative Scenarios 03 - Create an existing user should fail with 400" name="Validating Negative Scenarios 03 - Create an existing user should fail with 400" time="0.077">
     </testcase>
-    <testcase classname="Book Management API Test 06 - Get Book Details" name="Book Management API Test 06 - Get Book Details" time="0.008">
+    <testcase classname="Validating Negative Scenarios 04 - Get book with invalid ID should return 422" name="Validating Negative Scenarios 04 - Get book with invalid ID should return 422" time="0.011">
     </testcase>
-    <testcase classname="Book Management API Test 07 - Get All Books Details" name="Book Management API Test 07 - Get All Books Details" time="0.017">
+  </testsuite>
+  <testsuite name="Book Management API Test" errors="0" failures="0" skipped="0" timestamp="2025-09-10T10:04:34" time="1.768" tests="5">
+    <testcase classname="Book Management API Test 01 - Create a new book Data" name="Book Management API Test 01 - Create a new book Data" time="0.071">
     </testcase>
-    <testcase classname="Book Management API Test 08 - Delete Book" name="Book Management API Test 08 - Delete Book" time="0.03">
+    <testcase classname="Book Management API Test 02 - Update Book Data Values" name="Book Management API Test 02 - Update Book Data Values" time="0.033">
     </testcase>
-    <testcase classname="Book Management API Test 09 - Trying to delete already deleted book" name="Book Management API Test 09 - Trying to delete already deleted book" time="0.012">
+    <testcase classname="Book Management API Test 03 - Get Book Details" name="Book Management API Test 03 - Get Book Details" time="0.011">
     </testcase>
-    <testcase classname="Book Management API Test 10 - Invalid Json format" name="Book Management API Test 10 - Invalid Json format" time="0.007">
+    <testcase classname="Book Management API Test 04 - Get All Books Details" name="Book Management API Test 04 - Get All Books Details" time="0.018">
+    </testcase>
+    <testcase classname="Book Management API Test 05 - Delete Book" name="Book Management API Test 05 - Delete Book" time="0.049">
+    </testcase>
+  </testsuite>
+  <testsuite name="Validating Server Health" errors="0" failures="0" skipped="0" timestamp="2025-09-10T10:04:36" time="0.892" tests="1">
+    <testcase classname="Validating Server Health 01 - Check Health Status" name="Validating Server Health 01 - Check Health Status" time="0.082">
     </testcase>
   </testsuite>
 </testsuites>

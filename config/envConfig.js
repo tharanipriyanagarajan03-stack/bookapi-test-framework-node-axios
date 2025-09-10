@@ -19,6 +19,7 @@ function loadConfig() {
 
   config = {
     url: process.env.URL,
+    userId: process.env.USERID,
     email: process.env.EMAIL,
     password: process.env.PASSWORD
   };
@@ -31,6 +32,11 @@ function getUrl() {
   return loadConfig().url;
 }
 
+function getUserId() {
+    return loadConfig().userId;
+}
+
+
 function getEmail() {
   return loadConfig().email;
 }
@@ -39,4 +45,4 @@ function getPassword() {
   return loadConfig().password;
 }
 
-module.exports = { getUrl, getEmail, getPassword };
+module.exports = { getUrl, getUserId, getEmail, getPassword };

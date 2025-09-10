@@ -20,9 +20,9 @@ class crudServices {
 
     }
 
-    static async delete(endpoint, data) {
+    static async delete(endpoint, header) {
 
-        return apiClient.delete(endpoint, data);
+        return apiClient.delete(endpoint, header);
 
     }
 
