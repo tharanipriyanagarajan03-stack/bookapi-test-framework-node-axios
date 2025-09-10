@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Jest + Axios API automation for FastAPI Book Management",
   "scripts": {
-    "test": "jest --runInBand --config=jest.config.js bookapi-test-framework-node-axios/__tests__",
+    "test": "jest --runInBand --config=jest.config.js bookapi-test-framework-node-axios/__tests__/testcases",
     "test:ci": "jest --runInBand --reporters=default --reporters=jest-junit",
     "coverage": "jest --coverage"
   },
